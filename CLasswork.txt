@@ -1,0 +1,4 @@
+write a java program to create a class called constant with a static variable pi,initialise the value of pi. create a method called area to calculate the area of a circle given it's radius inputed by a user
+
+
+write a java program to create a class called bank account with variable account number and balance and interest rate provide static methods to get and set the static variables. create several account objects and print their detail along with static variables

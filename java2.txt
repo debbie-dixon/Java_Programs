@@ -1,0 +1,19 @@
+JAVA
+...Uses of java
+1) web development
+2. mobile development
+3. enterprise applications
+4. desktop application
+5. big data technologies
+scientific and research
+
+Main method is the entry level of the class program and without it, the program will not run.
+syntax is main(String[] args){}
+
+how to know a method in java
+name()
+
+output methods
+1) print()--- appends the previous print to the next one without a new line(use it when prompting a user for input)
+2) println()--- appends a new line at the end, which moves the cursor to the next line
+3) printf()
