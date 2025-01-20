@@ -1,0 +1,129 @@
+				Chapter 4
+
+Exercises 1
+
+5.7 What is the value of x after each of the following statements is executed?
+
+	a) x = Math.abs(7.5); Ans= 7.5
+		
+	b) x = Math.floor(7.5); Ans= 7
+
+	c) x = Math.abs(0.0); Ans= 0
+
+	d) x = Math.ceil(0.0); Ans= 0
+
+	e) x = Math.abs(-6.4); Ans= 6.4
+
+	f) x = Math.ceil(-6.4); Ans= -6
+
+	g) x = Math.ceil(-Math.abs(-8 + Math.floor(-5.5))); Ans= -14
+
+
+5.12 Write statements that assign random integers to the variable n in the following ranges:
+
+	a) 1 <= n <= 2
+
+import java.util.Random;
+
+public class RandomInteger1 {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int n = rand.nextInt(2) + 1; // Generate random integer between 1 and 2
+        System.out.println("Random integer between 1 and 2: " + n);
+    }
+}
+	b) 1 <= n <= 100
+
+import java.util.Random;
+
+public class RandomInteger2 {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int n = rand.nextInt(100) + 1; // Generate random integer between 1 and 100
+        System.out.println("Random integer between 1 and 100: " + n);
+    }
+}
+	c) 0 <= n <= 9
+
+import java.util.Random;
+
+public class RandomInteger3 {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int n = rand.nextInt(10); // Generate random integer between 0 and 9
+        System.out.println("Random integer between 0 and 9: " + n);
+    }
+}
+	d) 1000 <= n <= 1112
+
+import java.util.Random;
+
+public class RandomInteger4 {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int n = rand.nextInt(113) + 1000; // Generate random integer between 1000 and 1112
+        System.out.println("Random integer between 1000 and 1112: " + n);
+    }
+}
+	e) - 1 <= n <= 1
+
+import java.util.Random;
+
+public class RandomInteger5 {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int n = rand.nextInt(3) - 1; // Generate random integer between -1 and 1
+        System.out.println("Random integer between -1 and 1: " + n);
+    }
+}
+	f) - 3 <= n <= 11
+
+import java.util.Random;
+
+public class RandomInteger6 {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int n = rand.nextInt(15) - 3; // Generate random integer between -3 and 11
+        System.out.println("Random integer between -3 and 11: " + n);
+    }
+}
+
+
+5.13 Write statements that will display a random number from each of the following sets:
+
+	a) 2, 4, 6, 8, 10.
+
+import java.util.Random;
+
+public class RandomNumber1 {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int[] numbers = {2, 4, 6, 8, 10};
+        int index = rand.nextInt(numbers.length); 
+        System.out.println("Random number from the set {2, 4, 6, 8, 10}: " + numbers[index]);
+    }
+}
+	b) 3, 5, 7, 9, 11.
+
+import java.util.Random;
+
+public class RandomNumber2 {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int[] numbers = {3, 5, 7, 9, 11};
+        int index = rand.nextInt(numbers.length);
+        System.out.println("Random number from the set {3, 5, 7, 9, 11}: " + numbers[index]);
+    }
+}
+	c) 6, 10, 14, 18, 22.
+
+import java.util.Random;
+
+public class RandomNumber3 {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int[] numbers = {6, 10, 14, 18, 22};
+        int index = rand.nextInt(numbers.length);
+        System.out.println("Random number from the set {6, 10, 14, 18, 22}: " + numbers[index]);
+    }
+}
