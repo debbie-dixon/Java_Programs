@@ -1,0 +1,12 @@
+import java.util.Arrays;
+public class UsingArraysClass {
+	public static void main(String[] args) {
+		int [] numbers = {6,19,2,29,1,30,8,3,12,4};
+		
+		Arrays.sort(numbers);
+		for (element : numbers){
+			System.out.printf("The sorted numbers is %d%n", numbers)
+		}
+		
+	}
+}
